@@ -2,3 +2,5 @@ __pycache__/
 .pytest_cache/
 *.py[cod]
 shopping_cart-specification.pdf
+htmlcov/
+.coverage
