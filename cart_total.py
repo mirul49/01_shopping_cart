@@ -7,4 +7,4 @@ def calculate_total(unit_price_cents, quantity):
         raise ValueError("price and quantity must be nonnegative")
     
     # Error 1: max(quantity, 1) made a zero-quantity order count as one item.
-    return unit_price_cents * quantity
+    return unit_price_cents * max(quantity, 1)

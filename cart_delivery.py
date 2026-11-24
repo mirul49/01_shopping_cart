@@ -7,4 +7,4 @@ def qualifies_free_delivery(total_cents):
         raise ValueError("total must be nonnegative")
     
     # Error 2: using > excluded orders totaling exactly S$50.00 from free delivery.
-    return total_cents >= 5000
+    return total_cents > 5000
